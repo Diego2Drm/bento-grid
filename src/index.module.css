@@ -1,20 +1,278 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
-  --Purple-100: hsl(254, 88%, 90%);
-  --Purple-500: hsl(256, 67%, 59%);
-  --Yellow-100: hsl(31, 66%, 93%);
-  --Yellow-500: hsl(39, 100%, 71%);
-  --White: hsl(0, 0%, 100%);
-  --Black: hsl(0, 0%, 7%);
+  --Purple-100: #dacffc;
+  --Purple-500: #7650dc;
+  --Yellow-100: #f9eee1;
+  --Yellow-500: #ffcb6b;
+  --White: #ffffff;
+  --Black: #121212;
 }
 
-*{
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-html{
-   font-size: 62.5%;
-   font-family: "DM Sans", sans-serif;
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+  background: rgb(233, 233, 233);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  padding: 2rem 1rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* First Component */
+.containerFirst {
+  width: 100%;
+  background: var(--Purple-500);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.containerFirst h2 {
+  color: var(--White);
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.containerFirst h2 span {
+  color: var(--Yellow-500);
+}
+.containerFirst figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerFirst img {
+  width: 80%;
+  margin: 2rem 0;
+}
+.containerFirst p {
+  color: var(--Yellow-100);
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Second Component */
+.secondContainer {
+  width: 100%;
+  background: var(--White);
+  border-radius: 1rem;
+  margin-block: 3rem;
+  padding: 2rem;
+}
+.secondContainer figure {
+  width: 100%;
+}
+
+.secondContainer figure img {
+  width: 100%;
+}
+.secondContainer h2 {
+  color: var(--Black);
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-block-start: 2rem;
+}
+/* Third Component */
+.thirdContainer {
+  width: 100%;
+  min-height: 25rem;
+  background: var(--Yellow-500);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+.thirdContainer h2 {
+  color: var(--Black);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.thirdContainer figure {
+  width: 100%;
+  position: absolute;
+  bottom: -0.3rem;
+}
+.thirdContainer figure img {
+  width: 60%;
+}
+
+/* Fourth Component */
+.fourthContainer {
+  width: 100%;
+  background: var(--Purple-100);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+.fourthContainer h2 {
+  color: var(--Black);
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-block-end: 2rem;
+}
+.fourthContainer figure {
+  width: 100%;
+}
+
+.fourthContainer figure img {
+  width: 100%;
+}
+.fourthContainer p {
+  margin-block-start: 1rem;
+  color: var(--Black);
+  font-weight: 500;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+/* Fifth Component */
+.fifthContainer {
+  width: 100%;
+  background: var(--Purple-500);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+.fifthContainer h2 {
+  color: var(--White);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-block-start: 3rem;
+}
+.fifthContainer figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fifthContainer figure img {
+  width: 80%;
+}
+/* Sixth Component */
+.sixthContainer {
+  width: 100%;
+  background: var(--White);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.sixthContainer h2 {
+  color: var(--Black);
+  font-weight: 600;
+  font-size: 4rem;
+}
+.sixthContainer p {
+  color: var(--Black);
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-block-end: 2rem;
+}
+.sixthContainer figure {
+  width: 100%;
+}
+
+.sixthContainer figure img {
+  width: 50%;
+}
+/* Seventh Component */
+.seventhContainer {
+  width: 100%;
+  background: var(--Yellow-100);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-block-start: 2rem;
+}
+.seventhContainer h2 {
+  color: var(--Black);
+  font-weight: 600;
+  line-height: 2.5rem;
+  font-size: 3rem;
+}
+.seventhContainer h2 i {
+  color: var(--Purple-500);
+}
+.seventhContainer figure {
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+
+.seventhContainer figure img {
+  width: 60%;
+}
+/* Eighth Component */
+.eighthContainer {
+  width: 100%;
+  background: var(--Yellow-500);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-block-start: 2rem;
+}
+.eighthContainer h2 {
+  color: var(--Black);
+  font-weight: 600;
+  line-height: 2.5rem;
+  font-size: 3rem;
+}
+.eighthContainer figure {
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+.eighthContainer figure img {
+  width: 70%;
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 20rem);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-areas:
+      "one two two three "
+      "one two two three "
+      "one two two three "
+      "one two two three "
+      "one five six three "
+      " four five six three "
+      " four five six three "
+      " four seven eigth eigth "
+      " four seven eigth eigth "
+      " four seven eigth eigth ";
+  }
+  .containerFirst {
+    grid-area: two;
+  }
+  .secondContainer {
+    grid-area: five;
+  }
+  .thirdContainer {
+    grid-area: six;
+  }
+  .fourthContainer {
+    grid-area: three;
+  }
+  .fifthContainer {
+    grid-area: eigth;
+  }
+  .sixthContainer {
+    grid-area: seven;
+  }
+  .seventhContainer {
+    grid-area: one;
+  }
+  .eighthContainer {
+    grid-area: four;
+  }
 }
