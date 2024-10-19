@@ -9,7 +9,6 @@ import { FifthComponent } from "./Components/FifthComponent";
 import { SixthComponet } from "./Components/SixthComponent";
 import { SeventhComponent } from "./Components/SeventhComponent";
 import { EighthComponent } from "./Components/EighthComponent";
-import { ExamplesMotion } from "./Components/ExamplesMotion";
 
 function App() {
   const gridContainerVariants = {
@@ -22,8 +21,8 @@ function App() {
     },
   };
   const gridSquare = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
+    hidden: { opacity: 0, y: 100 },
+    show: { opacity: 1, y: 0},
   };
   return (
       <motion.section
@@ -40,7 +39,6 @@ function App() {
         <SixthComponet variants={gridSquare}/>
         <SeventhComponent variants={gridSquare}/>
         <EighthComponent variants={gridSquare}/>
-        {/* <ExamplesMotion /> */}
       </motion.section>
   );
 }

@@ -5,11 +5,21 @@ import { motion } from "framer-motion";
 
 function FifthComponent(props) {
   return (
-    <motion.section transition={{duration: 1, ease: "easeOut", delay: 1.2}} variants={props.variants}  className={style.fifthContainer}>
+    <motion.section
+      transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
+      variants={props.variants}
+      className={style.fifthContainer}
+    >
       <figure>
-        <img src={illustrationGrowFollowers} alt="illustration-grow-followers" />
+        <img
+          src={illustrationGrowFollowers}
+          alt="illustration-grow-followers"
+        />
       </figure>
-      <h2>  Grow followers <br /> with non-stop <br /> content.</h2>
+      <h2>
+        {" "}
+        Grow followers <br /> with non-stop <br /> content.
+      </h2>
     </motion.section>
   );
 }

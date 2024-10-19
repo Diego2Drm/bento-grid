@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 
 function ThirdComponent(props) {
   return (
-    <motion.section transition={{duration: 1, ease: "easeOut", delay: 0.7}} variants={props.variants}  className={style.thirdContainer}>
+    <motion.section
+      transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
+      variants={props.variants}
+      className={style.thirdContainer}
+    >
       <h2>Maintain a consistent posting schedule.</h2>
       <figure>
         <img

@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 
 function FourthComponent(props) {
   return (
-    <motion.section transition={{duration: 1, ease: "easeOut", delay: 0.9}} variants={props.variants}  className={style.fourthContainer}>
+    <motion.section
+      transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
+      variants={props.variants}
+      className={style.fourthContainer}
+    >
       <h2>Schedule to social media.</h2>
       <figure>
-        <img
-          src={illustrationSchedulePosts}
-          alt="illustrationSchedulePosts"
-        />
+        <img src={illustrationSchedulePosts} alt="illustrationSchedulePosts" />
       </figure>
       <p>
         Optimize post timings to publish content at the perfect time for your

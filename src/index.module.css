@@ -80,15 +80,16 @@ html {
   font-weight: 700;
   font-size: 2.2rem;
   margin-block-start: 2rem;
+  line-height: 2.3rem;
 }
 /* Third Component */
 .thirdContainer {
   width: 100%;
-  min-height: 25rem;
+  height: 25rem;
   background: var(--Yellow-500);
   border-radius: 1rem;
   padding: 2rem;
-  position: relative;
+
 }
 .thirdContainer h2 {
   color: var(--Black);
@@ -97,6 +98,7 @@ html {
 }
 .thirdContainer figure {
   width: 100%;
+  position: relative;
   position: absolute;
   bottom: -0.3rem;
 }
@@ -131,6 +133,7 @@ html {
   font-weight: 500;
   font-size: 1.9rem;
   text-align: center;
+  line-height: 1.8rem;
 }
 
 /* Fifth Component */
@@ -232,11 +235,11 @@ html {
 
 @media (min-width: 1024px) {
   .gridContainer {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 20rem);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 25rem);
+    grid-template-rows: repeat(10, 6.5rem);
     height: 100vh;
-    overflow: hidden;
     justify-content: center;
     gap: 2rem;
     grid-template-areas:
@@ -252,27 +255,145 @@ html {
       " four seven eigth eigth ";
   }
   .containerFirst {
+    padding-block-start: 7rem;
     grid-area: two;
+    h2{
+      line-height: 5rem;
+      font-size: 5.5rem;
+    }
+    figure{
+      img{
+       width: 40%;
+      }
+    }
   }
+
   .secondContainer {
     grid-area: five;
+    margin-block: 0;
+    overflow: hidden;
+      figure {
+      img{
+        width: 150%;
+      }
+    }
+    h2{
+      font-size: 2.8rem;
+      line-height: 2.4rem;
+    }
   }
+
   .thirdContainer {
     grid-area: six;
+    overflow: hidden;
+    height: 100%;
+    h2{
+      font-size: 3rem;
+      line-height: 2.6rem;
+    }
+    figure{
+      bottom: -6.3rem;
+      img{
+       width: 80%; 
+      }
+    }
   }
+
   .fourthContainer {
     grid-area: three;
+    height: 100%;
+    margin-block: 0;
+    padding-block-start: 5rem;
+    overflow: hidden;
+    h2{
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    figure{
+      position: relative;
+      height: 65%;
+      img {
+        position: absolute;
+        width: 172%;
+        height: 100%;
+      }
+    }
+    p{
+      text-align: start;
+      font-size: 1.6rem;
+      padding-inline-end: 4rem;
+      line-height: 1.6rem;
+    }
   }
+
   .fifthContainer {
     grid-area: eigth;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    h2{
+      font-size: 3.5rem;
+      line-height: 3rem;
+      margin: 0;
+      text-align: start;
+    }
+    figure{
+      width: 50%;
+      height: 100%;
+      img{
+        height: 100%;
+      }
+    }
   }
+
   .sixthContainer {
     grid-area: seven;
+    h2{
+      font-size: 6rem;
+    }
+    p{
+      font-size: 1.8rem;
+      margin-block-end: 3rem;
+    }
+    figure{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 80%;
+      }
+    }
   }
   .seventhContainer {
+    margin-block-start: 0;
+    padding-block-start: 7rem;
     grid-area: one;
+    h2{
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    figure{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 80%;
+      }
+    }
   }
   .eighthContainer {
     grid-area: four;
+    margin-block-start: 0;
+    h2{
+      font-size: 3.5rem;
+      line-height: 2.9rem;
+    }
+    figure{
+      height: 65%;
+      margin-block-start: 3.5rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
