@@ -233,6 +233,16 @@ html {
   width: 70%;
 }
 
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+.footer a{
+  color: #3e52a3;
+}
+
 @media (min-width: 1024px) {
   .gridContainer {
     width: 100%;
@@ -395,5 +405,10 @@ html {
         height: 100%;
       }
     }
+  }
+
+  .footer{
+    position: absolute;
+    bottom: -25rem; 
   }
 }
