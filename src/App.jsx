@@ -52,7 +52,7 @@ function App() {
           {" "}
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Diego Ramírez</a>
+        . Coded by <a href="https://github.com/Diego2Drm/bento-grid">Diego Ramírez</a>
       </motion.footer>
     </>
   );
