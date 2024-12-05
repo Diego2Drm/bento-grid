@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Diego2Drm/bento-grid)
-- Live Site URL: [Bento-Grid](https://github.com/Diego2Drm/bento-grid)
+- Live Site URL: [Bento-Grid](https://diego2drm.github.io/bento-grid/)
 
 ## My process
 
